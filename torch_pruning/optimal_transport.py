@@ -28,14 +28,12 @@ class OptimalTransport:
         target_probability: str = "uniform",
         source_probability: str = "uniform",
         target: str = "most_important",
-        coefficients: str = "uniform",
         gpu_id: int = 0,
     ):
         self.p = p
         self.target_probability = target_probability
         self.source_probability = source_probability
         self.target = target
-        self.coefficients = coefficients
         self.gpu_id = gpu_id
 
     def _normalize(self, cost, normalizer):
@@ -165,11 +163,6 @@ class OptimalTransport:
         ).transpose()
 
         ot_map = torch.from_numpy(ot_map).float()
-
-        ot_map /= source_prob[None, :]
-        ot_map *= self._probability(
-            self.coefficients, cost.shape[0], importance, keep_idxs
-        )
 
         ot_map = ot_map / ot_map.sum(dim=0)
 
