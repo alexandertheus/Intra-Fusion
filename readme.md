@@ -19,12 +19,12 @@ This repository serves as an implementation of Intra-Fusion.
 
 VGG11-BN on CIFAR-10. Groups 1, 2 and 3. Sparsities 30-70%. Pruning criteria: L1-norm.
 ```
-python main.py --model-name vgg11_bn --group_idxs 1 2, 3 \
+python main.py --model-name vgg11_bn --group_idxs 1 2 3 \
 --sparsities 0.3 0.4 0.5 0.6 0.7 --importance_criteria l1
 ```
 VGG11-BN on CIFAR-10. Groups 1, 2 and 3. Sparsities 30-70%. Pruning criteria: Taylor.
 ```
-python main.py --model-name vgg11_bn --group_idxs 1 2, 3 \
+python main.py --model-name vgg11_bn --group_idxs 1 2 3 \
 --sparsities 0.3 0.4 0.5 0.6 0.7 --importance_criteria taylor
 ```
 ResNet18 on CIFAR-10. Groups 1, 2 and 3. Sparsities 30-70%. Pruning criteria: L1-norm.
