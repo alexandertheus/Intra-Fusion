@@ -1,5 +1,7 @@
 # Towards Meta-Pruning via Optimal Transport
 
+<img src="loss_landscape_resnet18_40.png" width="425"/> <img src="loss_landscape_resnet18_40.png" width="425"/> 
+
 ## Introduction
 This repository serves as an implementation of Intra-Fusion.
 
