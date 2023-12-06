@@ -2,6 +2,8 @@
 
 <img src="loss_landscape_resnet18_40.png" width="350"/> <img src="loss_landscape_resnet18_60.png" width="350"/> 
 
+<em>ResNet18 on CIFAR-10. 40% sparsity (left), 60% sparsity (right). IF: Intra-Fusion.</em>
+
 ## Introduction
 This repository serves as an implementation of Intra-Fusion.
 
