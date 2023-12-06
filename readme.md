@@ -1,7 +1,7 @@
 # Towards Meta-Pruning via Optimal Transport
 
 ## Introduction
-This repository serves as an implementation of Intra-Fusion (insert citation).
+This repository serves as an implementation of Intra-Fusion.
 
 >Structural pruning of neural networks conventionally relies on identifying and discarding less important neurons, a practice often resulting in significant accuracy loss that necessitates subsequent fine-tuning efforts. This paper introduces a novel approach named Intra-Fusion, challenging this prevailing pruning paradigm. Unlike existing methods that focus on designing meaningful neuron importance metrics, Intra-Fusion redefines the overlying pruning procedure. Through utilizing the concepts of model fusion and Optimal Transport, we leverage an agnostically given importance metric to arrive at a more effective sparse model representation. Notably, our approach achieves substantial accuracy recovery without the need for resource-intensive fine-tuning, making it an efficient and promising tool for neural network compression.
 
@@ -15,6 +15,8 @@ This repository serves as an implementation of Intra-Fusion (insert citation).
 - pandas (v1.5.3)
 
 ## Sample commands
+**Before executing the following commands, first unzip the models.zip folder!**
+
 VGG11-BN on CIFAR-10. Groups 1, 2 and 3. Sparsities 30-70%. Pruning criteria: L1-norm.
 ```
 python main.py --model-name vgg11_bn --group_idxs [1, 2, 3] \
