@@ -43,18 +43,27 @@ The implementation of Intra-Fusion is built as an extension of an existing pruni
 Followingly, we want to highlight the specific changes we made to realize Intra-Fusion.
 
 ### Merging Batch-Normalization with the prior layer
+
 File: torch_pruning/pruner/algorithms/metapruner.py
+
 Function: merge_bn()
+
 Here, the batchnormalization layer is merged with the layer it acts upon, thereby preserving the function output.
 
 ### Derivation of the Optimal Transport map
+
 File: torch_pruning/optimal_transport.py
+
 Class: OptimalTransport()
+
 Calling this class will provide the optimal transport map that is later used to fuse maching neurons.
 
 ### Layer compression
+
 File: torch_pruning/function.py
+
 Function (line 96): _prune_parameter_and_grad()
+
 Here, we are given the transport map, and followingly derive the compressed layer via matrix multiplication with the optimal transport map (ot_map).
 
 
