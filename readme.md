@@ -52,7 +52,7 @@ File: torch_pruning/pruner/algorithms/metapruner.py
 
 Function: merge_bn()
 
-Here, the batchnormalization layer is merged with the layer it acts upon, thereby preserving the function output.
+The batchnormalization layer is merged with the layer it acts upon, thereby preserving the function output.
 
 ### Derivation of the Optimal Transport map
 
@@ -64,10 +64,10 @@ Calling this class will provide the optimal transport map that is later used to 
 
 ### Layer compression
 
-File: torch_pruning/function.py
+File: torch_pruning/pruner/function.py
 
 Function (line 96): _prune_parameter_and_grad()
 
-Here, we are given the transport map, and followingly derive the compressed layer via matrix multiplication with the optimal transport map (ot_map).
+One is given the transport map, and followingly the compressed layer is derived via matrix multiplication with the optimal transport map (ot_map).
 
 
