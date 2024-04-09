@@ -70,4 +70,13 @@ Function (line 96): _prune_parameter_and_grad()
 
 One is given the transport map, and followingly the compressed layer is derived via matrix multiplication with the optimal transport map (ot_map).
 
+## Citation
+```
+@inproceedings{theus2024metapruning,
+  title={Towards Meta-Pruning via Optimal Transport},
+  author={Alexander Theus and Olin Geimer and Friedrich Wicke and Thomas Hofmann and Sotiris Anagnostidis and Sidak Pal Singh},
+  booktitle={Proceedings of the International Conference on Learning Representations (ICLR)},
+  year={2024},
+}
+```
 
