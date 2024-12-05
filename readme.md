@@ -1,5 +1,8 @@
 # Towards Meta-Pruning via Optimal Transport
 
+[![Preprint](https://img.shields.io/badge/preprint-available-brightgreen)](https://arxiv.org/abs/2402.07839) &nbsp;
+[![License](https://img.shields.io/badge/license-MIT-blue)](https://github.com/alexandertheus/Intra-Fusion/blob/main/LICENSE)
+
 <img src="loss_landscape_resnet18_40.png" width="350"/> <img src="loss_landscape_resnet18_60.png" width="350"/> 
 
 <em>ResNet18 on CIFAR-10. 40% sparsity (left), 60% sparsity (right). IF: Intra-Fusion.</em>
